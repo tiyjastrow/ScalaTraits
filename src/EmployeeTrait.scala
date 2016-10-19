@@ -4,14 +4,15 @@
 trait EmployeeTrait {
   var name: String
   var title: String
+  override def toString: String = s"My name is ${name} and I am a (${title})"
 }
 
-class Employee extends EmployeeTrait{
+class Worker extends EmployeeTrait{
   override val name: String = s"${name}"
-  val title: String = s"${title}"
+  val title: String = "Wkr"
 }
 
 class Manager extends EmployeeTrait{
   override val name: String = s"${name}"
-  val title: String = s"${title}"
+  val title: String = "Mgr"
 }
