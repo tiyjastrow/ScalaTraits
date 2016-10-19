@@ -4,7 +4,7 @@
 trait EmployeeTrait {
   var name: String
   var title: String
-  override def toString: String = s"My name is ${name} and I am a (${title})"
+  override def toString: String = s"My name is: ${name} (${title})"
 }
 
 class Worker extends EmployeeTrait{
