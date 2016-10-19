@@ -4,7 +4,7 @@
 object Employee {
 
   def main(args: Array[String]): Unit = {
-    
+
   }
 
 }
