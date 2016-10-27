@@ -21,7 +21,7 @@ object ScalaTraits {
   def main(args: Array[String]): Unit = {
 
     val list = List(new Worker("John"), new Manager("Bob"), new Manager("Alice"))
-    val map = list.map(e => e.name -> e)
-    for((k, v) <- map) println(v)
+    val employeeMap = list.map(employee => employee.name -> employee.toString).toMap
+    employeeMap.foreach(employee => println(employee._2))
   }
 }
