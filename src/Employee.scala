@@ -23,7 +23,7 @@ object doSomething {
   def main(args: Array[String]): Unit = {
     val mgr = new Manager("Jim")
     val wkr = new Worker("Bob")
-    val wkr2 = new Worker("Jimbob Cooter")
+    val wkr2 = new Worker("Terry")
 
     val employees = List(mgr, wkr, wkr2)
     val employeeMap = employees.map(i => i.name -> i.toString).toMap
